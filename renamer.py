@@ -45,7 +45,7 @@ for old_filename in os.listdir():
 
         if title in old_filename:
             audiofile = eyed3.load(old_filename)
-            
+
             tag = Tag()
             tag.track_num = i
             tag.title = title
@@ -54,6 +54,6 @@ for old_filename in os.listdir():
             tag.publisher = publisher
             audiofile.tag = tag
             audiofile.tag.save()
-            
+
             if old_filename != title + ".mp3":
                 audiofile.rename(title)
