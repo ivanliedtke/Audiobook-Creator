@@ -1,0 +1,5 @@
+eyeD3
+autopep8
+black
+pre-commit
+moviepy
